@@ -1,45 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>UserList</title>
-  </head>
-  <body>
-    <header class="mb-5">
-  <div class="container mt-5">
 
-    <div class="d-flex justify-content-end">
-      <div class="btn-group">
-  <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark">Dark</button>
-  <button class="btn btn-light btn-sm" data-bs-theme-value="light">Light</button>
-</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <h1>Users</h1>
-<div class="row">
-  <div class="col-md-4">
-  <input
-    type="text"
-    class="form-control form-control-lg"
-    placeholder="Search Users"
-  />
-</div>
-<div class="col-md-8">
-  <nav class="d-flex justify-content-end align-items-center">
-    <a href="#">Reputation</a>
-    <a href="#" class="active">New Users</a>
-    <a href="#">Editors</a>
-    <a href="#">Moderators</a>
-  </nav>
-</div>
-</div>
-  </div>
-</header>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/darkmodetoggle.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  </body>
+  <title>UserList</title>
+</head>
+
+<body>
+
+  <header class="mb-5">
+    <div class="container mt-5">
+
+      <div class="d-flex justify-content-end">
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark">
+            Dark
+          </button>
+
+          <button class="btn btn-light btn-sm" data-bs-theme-value="light">
+            Light
+          </button>
+        </div>
+      </div>
+
+      <h1>Users</h1>
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            placeholder="Search Users"
+          />
+        </div>
+
+        <div class="col-md-8">
+          <nav class="d-flex justify-content-end align-items-center">
+            <a href="#">Reputation</a>
+            <a href="#" class="active">New Users</a>
+            <a href="#">Editors</a>
+            <a href="#">Moderators</a>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container">
+
+      <!-- ROW 1 -->
+      <div class="row">
+
+        <!-- John -->
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: john@gmail.com"
+          >
+
+            <div class="card-body">
+              <div class="d-flex gap-3">
+
+                <div class="user-img">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/75.jpg"
+                    alt=""
+                    class="rounded-circle img-fluid"
+                  >
+                </div>
+
+                <div class="user-info">
+                  <h4>John Doe</h4>
+                  <h6>Troy, MI</h6>
+
+                  <span class="badge bg-primary">nature</span>
+                  <span class="badge bg-primary">travel</span>
+                  <span class="badge bg-primary">sport</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Lehla -->
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: lehla@gmail.com"
+          >
+
+            <div class="card-body">
+              <div class="d-flex gap-3">
+
+                <div class="user-img">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/75.jpg"
+                    alt=""
+                    class="rounded-circle img-fluid"
+                  >
+                </div>
+
+                <div class="user-info">
+                  <h4>Lehla Nichols</h4>
+                  <h6>Fort Worth, TX</h6>
+
+                  <span class="badge bg-primary">Fashion</span>
+                  <span class="badge bg-primary">STEM</span>
+                  <span class="badge bg-primary">Architecture</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Annie -->
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: annie@gmail.com"
+          >
+
+            <div class="card-body">
+              <div class="d-flex gap-3">
+
+                <div class="user-img">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt=""
+                    class="rounded-circle img-fluid"
+                  >
+                </div>
+
+                <div class="user-info">
+                  <h4>Annie Rice</h4>
+                  <h6>Troy, MI</h6>
+
+                  <span class="badge bg-primary">Electronics</span>
+                  <span class="badge bg-primary">Tech</span>
+                  <span class="badge bg-primary">Music</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- ROW 2 -->
+      <div class="row">
+
+        <!-- G-Dragon -->
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: gdragon@gmail.com"
+          >
+
+            <div class="card-body">
+              <div class="d-flex gap-3">
+
+                <div class="user-img">
+                  <img
+                    src="https://images.en.koreaportal.com/data/images/full/48479/gdragon-from-offical-instagram.jpg?w=750"
+                    alt=""
+                    class="rounded-circle img-fluid"
+                    style="width: 100px; height: 100px; object-fit: cover;"
+                  >
+                </div>
+
+                <div class="user-info">
+                  <h4>G-Dragon</h4>
+                  <h6>Seoul, South Korea</h6>
+
+                  <span class="badge bg-primary">Music</span>
+                  <span class="badge bg-primary">Fashion</span>
+                  <span class="badge bg-primary">Art</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Taeyang -->
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: taeyang@gmail.com"
+          >
+
+            <div class="card-body">
+              <div class="d-flex gap-3">
+
+                <div class="user-img">
+                  <img
+                    src="https://static.wikia.nocookie.net/k-pop/images/6/6a/Taeyang-Still_Life.webp/revision/latest?cb=20221215003335&path-prefix=fr"
+                    alt=""
+                    class="rounded-circle img-fluid"
+                    style="width: 100px; height: 100px; object-fit: cover;"
+                  >
+                </div>
+
+                <div class="user-info">
+                  <h4>Taeyang</h4>
+                  <h6>Seoul, South Korea</h6>
+
+                  <span class="badge bg-primary">Music</span>
+                  <span class="badge bg-primary">Dance</span>
+                  <span class="badge bg-primary">Fashion</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Daesung -->
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Email: daesung@gmail.com"
+          >
+
+            <div class="card-body">
+              <div class="d-flex gap-3">
+
+                <div class="user-img">
+                  <img
+                    src="https://kpopping.com/_next/image?url=https%3A%2F%2Fcdn.kpopping.com%2Fidols%2FDaesung%2Fprofile.png%3Fv%3D1786503546200&w=1080&q=85"
+                    alt=""
+                    class="rounded-circle img-fluid"
+                    style="width: 100px; height: 100px; object-fit: cover;"
+                  >
+                </div>
+
+                <div class="user-info">
+                  <h4>Daesung</h4>
+                  <h6>Seoul, South Korea</h6>
+
+                  <span class="badge bg-primary">Music</span>
+                  <span class="badge bg-primary">Comedy</span>
+                  <span class="badge bg-primary">Travel</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/darkmodetoggle.js"></script>
+
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(
+      popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)
+    );
+  </script>
+
+</body>
 </html>
